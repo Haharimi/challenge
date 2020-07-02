@@ -1,0 +1,13 @@
+doctype html
+html
+    head 
+        title #{pageTitle} |  #{siteTitle}
+    body
+        ul
+            li
+                a(href=routes.home) Home
+            li
+                a(href=routes.create) Create
+        main
+            block content
+

@@ -1,0 +1,12 @@
+extends templates/layout 
+
+block content 
+    .movie__detail
+        h1=pageTitle
+        h4=movie.synopsis
+        ul
+        each item in movie.genres
+            li=item
+        a.movie__detail__link--edit(href=routes.editMovie(movie._id)) Edit
+
+
